@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <title>Timestamp Microservice | freeCodeCamp.org</title>
+   <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+      type="image/x-icon" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class=" pt-10 bg-slate-800 text-white flex justify-center">
+   <div class="p-4 rounded-2xl bg-slate-700 shadow-lg ">
+      <h1 class="font-bold text-6xl">Timestamp<br><span class="text-5xl text-red-400">Microservice</span></h1>
+      <div class="p-2 shadow-md flex mt-10 rounded-lg bg-slate-800">
+         <input class=" flex-1 focus:outline-none bg-transparent" placeholder="Input value here" aria-label="Input"
+            type="text" name="value" id="input-value">
+         <button class=" rounded-lg bg-red-400 shadow-lg py-2 px-4 hover:bg-red-300" id="submit">Ok</button>
+      </div>
+      <code class=" text-left flex mt-6 p-2 rounded-lg shadow-md bg-slate-800 flex-col">
+         { <br>
+            <span>
+               <span class=" text-yellow-600">"unix"</span>:<span id="unix" class=" text-red-300">1245555555555</span>,
+            </span>
+            <span>
+               <span class=" text-yellow-600">"utc"</span>:<span id="utc" class=" text-yellow-400">"Fri, 25 Dec 2015 00:00:00 GMT"</span><br>
+            </span>            
+         }
+      </code>
+   </div>
+   <script src="/index.js"></script>
+</body>
+
+</html>

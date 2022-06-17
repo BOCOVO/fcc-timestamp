@@ -3,7 +3,7 @@
  */
 const getTimestamp = (request, response) => {
     const input = Number(request.params.date) || request.params.date
-    const date = new Date(input)
+    const date = request.params.date === undefined ? new Date() : new Date(input)
     if (date.toString() === "Invalid Date") {
         response.status(400).send(
             {

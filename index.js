@@ -26,7 +26,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 // date endpoint 
-app.get("/api/:date", getTimestamp);
+app.get("/api/:date?", getTimestamp);
 
 // listen for requests :)
 var listener = app.listen(process.env.production ? process.env.PORT : 3000, function () {

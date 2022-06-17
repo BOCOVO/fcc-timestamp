@@ -6,7 +6,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"build": "tailwindcss -i ./src/style/style.css -o ./public/style.css --watch"
+		"build:dev": "tailwindcss -i ./src/style/style.css -o ./public/style.css --watch"
 	},
 	"dependencies": {
 		"express": "^4.12.4",
